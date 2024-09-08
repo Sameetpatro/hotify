@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotify</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/utility.css">
+    <link rel="stylesheet" href="css/hover.css">
+    <link rel="icon" type="image/x-icon" href="Images/favicon.png">
+</head>
+
+<body>
+    <div class="popup">You have listened music for 30 minutes, I hope you Should be fine now!!
+        <button id="butt">Ok</button>
+    </div>
+    <div class="container flex">
+        <div class="left black-border no-select">
+            <div class="home bg-gray">
+                <div class="logo"> <img id="logo" src="Images/logomain.png" alt="" style="width: 185px; position: relative;top: -31px; left: -24px;filter: invert(1);"></div>
+                <div id="clock"></div>
+            </div>
+            <div class="library bg-gray">
+                <div class="heading">
+                    <img class="invert" src="Images/lib.svg" alt="" />
+                    <h2>Your Library</h2>
+
+                </div>
+
+                <div class="lib-content ">
+                    <ul></ul>
+                </div>
+
+                <div id="footer">
+                    <div><a href="html/dummy.html"><span>Legal</span></a></div>
+                    <div><a href="html/dummy.html"><span>Privacy Center</span></a></div>
+                    <div><a href="html/dummy.html"><span>Privacy Policy</span></a></div>
+                    <div><a href="html/dummy.html"><span>Cookies</span></a></div>
+                    <div><a href="html/dummy.html"><span>About Ads</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="right bg-gray black-border no-select" style="margin: 5px;">
+            <div class="header">
+                <div class="dark hover-opacity">
+                    <button id="darky"><img class="invert" id="dark-button" src="Images/light.svg" alt=""></button>
+                </div>
+                <div class="happy">
+                    <div class="happy-seek"></div>
+                </div>
+                <div class="btn">
+                    <div class="sign-up hover-opacity"><button><a href="html/login.html">Log in</a></button></div>
+                    <div class="log-in hover-opacity"><button><a href="html/signup.html">Sign up </a></button></div>
+                </div>
+            </div>
+            <div class="playlist">
+                <h2>Hotify Playlist</h2>
+                <div class="card-container"></div>
+            </div>
+            <div class="volume-bar no-select">
+                <input type="range" id="volumeSlider" min="0" max="100" value="100">
+                <img class="invert" id="vol" src="Images/volume.svg" alt="">
+            </div>
+
+            <div class="playbar">
+                <div class="song-info no-select">SELECT A ALBUM -> SONG TO PLAY</div>
+                <div class="song-btn">
+                    <img class="invert pointer" id="prev" style="width: 20px;" src="Images/prev.svg" alt="">
+                    <img class="invert pointer" id="playnow" style="width: 20px;" src="Images/play.svg" alt="">
+                    <img class="invert pointer" id="next" style="width: 20px;" src="Images/next.svg" alt="">
+                </div>
+                <div class="song-time">00:00 | 00:00</div>
+                <div class="seekbar">
+                    <div class="circle"></div>
+                </div>
+            </div>
+        </div>
+        <script src="js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,31 @@
+:root{
+    --a: 0.65;
+}
+
+.play svg:hover{
+    opacity: var(--a);
+    transition: all ease-out 0.5s;
+    cursor: pointer;
+
+}
+.card img :hover{
+    --a: 1;
+}
+.card :hover{
+    font-size: 20px;
+    -webkit-user-select: none;
+    user-select: none;
+    text-decoration: dotted;
+    transition: all 100ms ease-in;
+    --a: 1;
+}
+
+.hover-opacity :hover{
+    opacity: 1;
+    font-size: 0.9rem;
+    transition: all 200ms ease-in-out; 
+}
+.lib-content ul li:hover{
+    background-color: black;
+    border: black;
+}
