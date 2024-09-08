@@ -13,8 +13,7 @@ function formatTime(seconds) {
 
 async function getSongs(folder) {
     curFolder = folder
-    console.log(curFolder)
-    let a = await fetch(`/${folder}/`)
+    let a = await fetch(`/sameetpatro.github.io/${folder}/`)
     let response = await a.text()
     let div = document.createElement("div")
     div.innerHTML = response
@@ -62,7 +61,7 @@ function playMusic(track) {
 }
 
 async function displayAlbums() {
-    let a = await fetch(`/hotify/Songs`)
+    let a = await fetch(`/sameetpatro.github.io/hotify/Songs`)
 
     let response = await a.text()
     let div = document.createElement("div")
